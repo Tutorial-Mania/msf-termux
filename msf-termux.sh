@@ -35,6 +35,7 @@ git clone https://github.com/Tutorial-Mania/msf-termux.git
 echo ""
 echo -e "    \e[32m Updated\e[0m"
 sleep 2
+cd $HOME
 clear
 exit 1
 
