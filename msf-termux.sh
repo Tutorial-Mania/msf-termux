@@ -28,8 +28,8 @@ exit 1
 elif [[ $op -eq 3 ]]; then
 echo ""
 echo -e "   \e[93m Updating...\e[0m"
-cd
 apt-get install git -y
+cd ..
 rm -rf msf-termux
 git clone https://github.com/Tutorial-Mania/msf-termux.git
 echo ""
@@ -44,7 +44,7 @@ echo -e "   \e[93m Installing...\e[0m"
 echo "   It can take 10 to 30 min. Depends on your net speed."
 sleep 2
 echo ""
-cd
+cd $HOME
 apt-get install unstable-repo -y
 apt-get install metasploit -y
 echo ""
