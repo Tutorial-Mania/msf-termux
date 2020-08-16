@@ -33,7 +33,7 @@ cd ..
 rm -rf msf-termux
 git clone https://github.com/Tutorial-Mania/msf-termux.git
 echo ""
-printf "   \e[32m Updated\e[0m"
+echo -e "   \e[32m Updated\e[0m"
 sleep 2
 clear
 exit 1
@@ -48,8 +48,8 @@ cd $HOME
 apt-get install unstable-repo -y
 apt-get install metasploit -y
 echo ""
-printf "   \e[32m Metasploit installed\e[0m"
-printf "   Type msfconsole to start metasploit-framework"
+echo -e "   \e[32m Metasploit installed\e[0m"
+echo -e "   Type msfconsole to start metasploit-framework"
 sleep 2
 clear
 exit 1
