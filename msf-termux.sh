@@ -1,26 +1,26 @@
 #bin/bash
 clear
 printf ""
-printf "    ╔══════════════════════════════════════╗"
-printf "    ║             \e[34m\e[5m msf-termux\e[25m\e[97m              ║"
-printf "    ╠══════════════════════════════════════╣"
-printf "    ║            Version - 1.0             ║"
-printf "    ╠══════════════════════════════════════╣"
-printf "    ║     Developed by:\e[96m Tutorial-Mania\e[97m     ║"
-printf "    ╠══════════════════════════════════════╣"
-printf "    ║\e[31m https://facebook.com/tutorialmaniabd\e[97m ║"
-printf "    ╠══════════════════════════════════════╣"
-printf "    ║     [1] - Install metasploit         ║"
-printf "    ║     [2] - Uninstall metasploit       ║"
-printf "    ║     [3] - Update msf-termux          ║"
-printf "    ║     [0] - Exit                       ║"
-printf "    ╚══════════════════════════════════════╝"
+printf "   ╔══════════════════════════════════════╗"
+printf "   ║             \e[34m\e[5m msf-termux\e[25m\e[97m              ║"
+printf "   ╠══════════════════════════════════════╣"
+printf "   ║            Version - 1.0             ║"
+printf "   ╠══════════════════════════════════════╣"
+printf "   ║     Developed by:\e[96m Tutorial-Mania\e[97m     ║"
+printf "   ╠══════════════════════════════════════╣"
+printf "   ║\e[31m https://facebook.com/tutorialmaniabd\e[97m ║"
+printf "   ╠══════════════════════════════════════╣"
+printf "   ║     [1] - Install metasploit         ║"
+printf "   ║     [2] - Uninstall metasploit       ║"
+printf "   ║     [3] - Update msf-termux          ║"
+printf "   ║     [0] - Exit                       ║"
+printf "   ╚══════════════════════════════════════╝"
 printf ""
-read -p $"    Enter your option: " op
+read -p $"   Enter your option: " op
 
 if [[ $op -eq 0 ]]; then
 echo ""
-echo -e "    \e[96mBye Bye\e[0m"
+echo -e "   \e[96mBye Bye\e[0m"
 sleep 2
 clear
 exit 1
@@ -33,7 +33,7 @@ cd ..
 rm -rf msf-termux
 git clone https://github.com/Tutorial-Mania/msf-termux.git
 echo ""
-printf "    \e[32m Updated\e[0m"
+printf "   \e[32m Updated\e[0m"
 sleep 2
 clear
 exit 1
@@ -48,8 +48,8 @@ cd $HOME
 apt-get install unstable-repo -y
 apt-get install metasploit -y
 echo ""
-printf "    \e[32m Metasploit installed\e[0m"
-printf "    Type msfconsole to start metasploit-framework"
+printf "   \e[32m Metasploit installed\e[0m"
+printf "   Type msfconsole to start metasploit-framework"
 sleep 2
 clear
 exit 1
@@ -64,7 +64,7 @@ echo ""
 cd
 apt-get --purge remove metasploit-framework
 echo ""
-printf "    \e[32m Metasploit uninstalled\e[0m"
+printf "   \e[32m Metasploit uninstalled\e[0m"
 sleep 2
 clear
 exit 1
@@ -74,7 +74,7 @@ fi
 
 else
 echo ""
-printf "    \e[91m Invalid option\e[0m"
+printf "   \e[91m Invalid option\e[0m"
 sleep 2
 clear
 bash msf-termux.sh
