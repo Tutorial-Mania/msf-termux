@@ -44,17 +44,11 @@ echo -e "   \e[93m Installing...\e[0m"
 echo "   It can take 10 to 30 min. Depends on your net speed."
 sleep 2
 echo ""
-pkg install git -y
-pkg install curl -y
-pkg install ruby -y
-pkg install nano -y
-pkg install gzip -y
-gem install bundler:1.17.3
-curl -LO https://github.com/termux/termux-packages/files/3960686/metasploit_5.0.56_android5_all.deb.gz
-gunzip metasploit_5.0.56_android5_all.deb.gz
-dpkg -i metasploit_5.0.56_android5_all.deb
-apt install -f -y
-clear
+cd $HOME
+apt-get install zip -y
+apt-get install curl -y
+apt-get install unstable-repo -y
+apt-get install metasploit -y
 echo ""
 echo -e "   \e[32m Metasploit installed\e[0m"
 echo -e "   Type msfconsole to start metasploit-framework"
